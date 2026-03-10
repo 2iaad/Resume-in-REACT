@@ -12,16 +12,19 @@ import './index.css'
 
 export default function App() {
   return (
-    <div className="flex flex-col gap-4 items-center p-5 bg-gray-100 min-h-screen">
+    <div className="flex flex-col items-center bg-gray-100 min-h-screen">
 
+      // TODO: fix this
       <DownloadButton />
-      <div id='resume' className="flex flex-col gap-4 w-[652px] min-h-264 p-10 bg-white shadow-lg rounded-xl">
-        <Header />
-        <Summary />
-        <Skills />
-        <Experience />
-        <Education />
-        <Projects />
+      <div id='resume' className="w-[825px] max-h-[1175px] m-6 bg-white shadow-lg overflow-clip">
+        <div className="bg-amber-600 flex flex-col gap-4 px-10 py-20 overflow-hidden">
+          <Header />
+          <Summary />
+          <Skills />
+          <Experience />
+          <Education />
+          <Projects />
+        </div>
       </div>
     </div>
   )

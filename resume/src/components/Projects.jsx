@@ -4,7 +4,7 @@ export default function Projects() {
       <h2 className="text-xl font-semibold mb-1">Projects</h2>
       <hr className='mb-3'></hr>
 
-      <div className="space-y-3">
+      <div className="space-y-2">
 
         <div>
           <h3 className="font-semibold">Inception</h3>
