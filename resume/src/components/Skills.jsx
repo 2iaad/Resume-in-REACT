@@ -4,7 +4,7 @@ export default function Skills() {
       <h2 className="text-xl font-semibold mb-1">Skills</h2>
       <hr className='mb-3'></hr>
 
-      <div className="space-y-3 text-gray-700">
+      <div className="space-y-1 text-gray-700">
 
         <div>
           <span className="font-semibold">Languages:</span>

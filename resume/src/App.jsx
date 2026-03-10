@@ -15,7 +15,7 @@ export default function App() {
     <div className="flex flex-col gap-4 items-center p-5 bg-gray-100 min-h-screen">
 
       <DownloadButton />
-      <div id='resume' className="flex flex-col gap-4 max-w-4xl p-10 bg-white shadow-lg rounded-xl">
+      <div id='resume' className="flex flex-col gap-4 w-[652px] min-h-264 p-10 bg-white shadow-lg rounded-xl">
         <Header />
         <Summary />
         <Skills />

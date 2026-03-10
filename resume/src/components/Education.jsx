@@ -4,7 +4,7 @@ export default function Education() {
       <h2 className="text-xl font-semibold mb-1">Education</h2>
       <hr className='mb-3'></hr>
 
-      <div className="space-y-4">
+      <div className="space-y-3">
 
         <div>
           <h3 className="font-semibold">1337 Coding School – Khouribga</h3>
