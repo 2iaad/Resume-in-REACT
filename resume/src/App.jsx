@@ -16,7 +16,7 @@ export default function App() {
 
       <DownloadButton />
       <div id='resume' className="flex w-[825px] min-h-[1175px] max-h-[1175px] m-6 bg-white shadow-lg overflow-clip">
-        <div className="flex flex-col self-start gap-3 mx-10 my-8 max-h-[1105px] overflow-clip">
+        <div className="flex flex-col self-start gap-4 mx-10 my-8 max-h-[1105px] overflow-clip">
           <Header />
           <Summary />
           <Skills />

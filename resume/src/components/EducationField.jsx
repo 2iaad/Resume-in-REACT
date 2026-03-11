@@ -2,12 +2,12 @@ export default function EducationField() {
 	const obj = [
 		{
 			degree: "Computer Science",
-			duration: "11/2023 – 02/2026",
+			duration: "Novemeber 2023 – February 2026",
 			school: "1337 Coding School – Khouribga"
 		},
 		{
 			degree: "Baccalaureate in Physical Sciences",
-			duration: "09/2020 – 06/2021",
+			duration: "september 2020 – June 2021",
 			school: "High School – Sharif El Idrissi Benslimane"
 		}]
 
@@ -18,7 +18,7 @@ export default function EducationField() {
 					<h3 className="font-semibold"> {item.school} </h3>
 					<p className="text-gray-600 text-sm"> {item.duration} </p>
 				</div>
-				<p className="text-gray-600 text-sm"> {item.degree} </p>
+				<p className="text-gray-600 text-m"> {item.degree} </p>
 			</div>
 		)
 	})

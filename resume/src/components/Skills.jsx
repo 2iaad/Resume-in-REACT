@@ -12,7 +12,7 @@ export default function Skills() {
         </div>
 
         <div>
-          <span className="font-semibold">Frameworks: </span>
+          <span className="font-semibold">Libraries / Frameworks: </span>
           Next.js, Express, React, Tailwind, Mongoose
         </div>
 

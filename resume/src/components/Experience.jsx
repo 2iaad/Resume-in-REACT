@@ -5,8 +5,8 @@ export default function Experience() {
     <section>
       <h2 className="text-xl font-semibold mb-1">Experience</h2>
       <hr className='mb-2'></hr>
-      
-      <ExperienceField/>
+
+      <ExperienceField />
     </section>
   )
 }
