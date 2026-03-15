@@ -1,12 +1,14 @@
-import ExperienceField from "./ExperienceField";
+import ExperienceField from "./ExperienceField"
 
-export default function Experience() {
+export default function Experience({ experience }) {
+  if (!experience?.length) return null
+
   return (
     <section>
-      <h2 className="text-xl font-semibold mb-1">Experience</h2>
-      <hr className='mb-2'></hr>
+      <h2 className="text-xl mb-1">Experience</h2>
+      <hr className='mb-3'></hr>
 
-      <ExperienceField />
+      <ExperienceField experience={experience} />
     </section>
   )
 }

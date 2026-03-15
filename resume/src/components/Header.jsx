@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { FaLinkedin, FaGithub } from "react-icons/fa"
 
-export default function Header() {
-  const [name, setName] = useState("Ziyad Derfoufi")
-  const [title, setTitle] = useState("Junior Software Engineer")
+export default function Header({ data }) {
+  const { name, title, phone, email, linkedin, github } = data
 
-  const [phone, setPhone] = useState("+212 697 91 48 07")
-  const [email, setEmail] = useState("ziyad@zderfoufi.dev")
-  const [linkedin, setLinkedin] = useState("ziyadderfoufi")
-  const [github, setgithub] = useState("2iaad")
+  const emailLink = email ? `mailto:${email}` : undefined
+  const linkedinLink = linkedin
+    ? `https://www.linkedin.com/in/${linkedin}/`
+    : undefined
+  const githubLink = github ? `https://www.github.com/${github}` : undefined
 
   return (
     <div className="flex flex-col items-center gap-2">
@@ -17,9 +16,10 @@ export default function Header() {
 
       <div className="flex gap-2 text-sm text-gray-500">
         <a
-          href="mailto:ziyad@zderfoufi.dev"
+          href={emailLink}
           className="underline"
           target="_blank"
+          rel="noreferrer"
         >
           <p>{email}</p>
         </a>
@@ -27,17 +27,19 @@ export default function Header() {
         <p>{phone}</p>
         |
         <a
-          href="https://www.linkedin.com/in/ziyadderfoufi/"
+          href={linkedinLink}
           className="flex justify-center underline items-center gap-1"
           target="_blank"
+          rel="noreferrer"
         >
           <FaLinkedin className='text-blue-600' /> {linkedin}
         </a>
         |
         <a
-          href="https://www.github.com/2iaad"
+          href={githubLink}
           className="flex justify-center underline items-center gap-1 "
           target="_blank"
+          rel="noreferrer"
         >
           <FaGithub className='text-gray-600' /> {github}
         </a>
