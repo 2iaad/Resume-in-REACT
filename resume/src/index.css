@@ -15,4 +15,21 @@
     size: 835px 1175px;
     margin: 0;
   }
+
+  body * {
+    visibility: hidden;
+  }
+
+  #resume,
+  #resume * {
+    visibility: visible;
+  }
+
+  #resume {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    box-shadow: none;
+  }
 }
